@@ -2,7 +2,7 @@
  * Rhapsody v1.0.0 (http://rhapsody.io)
  *
  * Copyright (c) 2015 Miles Jefferson
- * Licensed under MIT (https://github.com/ItsTheCoon/rhapsody.io/blob/master/LICENSE.md)
+ * README: Licensed under MIT (https://github.com/ItsTheCoon/rhapsody.io/blob/master/LICENSE.md)
  *
  * Hand-crafted to fill the interwebs with love and fresh-baked cookies. <3
  * Proudly presented by Miles Jefferson (Me!) @IceCubeCat101 (Twitter!)
@@ -137,11 +137,14 @@
 <!-- end font import -->
 
 <!-- start general styling -->
+/* start full page styling */
 body {
  font-family: "Source Sans Pro";
  font-weight: 200;
 }
+/* end full page styling */
 
+/* start heading styling */
 h1 {
  font-size: 5.0rem;
  font-family: "Source Sans Pro";
@@ -177,4 +180,15 @@ h6 {
  font-family: "Source Sans Pro";
  font-weight: 400 !important;
 }
+/* end heading styling */
+
+/* start link styling */
+a {
+  color: #FF6666; 
+}
+a:hover {
+  color: #FF3333; 
+}
+
+/* end link styling */
 <!-- end general styling -->
