@@ -190,4 +190,17 @@ a:hover {
   color: #FF3333; 
 }
 /* end link styling */
+
+/* start paragraph styling */
+p {
+ font-weight: 200;
+ color: #000000;
+}
+
+.title {
+ font-weight: 300 !important;
+ font-size: 3.0rem;
+}
+/* end paragraph styling */
+
 <!-- end general styling -->
