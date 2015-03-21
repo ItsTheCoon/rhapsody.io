@@ -13,6 +13,18 @@
  * Miles.
  */
  
+ <!-- start typography table of contents -->
+/*
+* 1. Font Import (Google Fonts)
+*   a. Vietnamese; 200
+*   b. Latin-Ext; 200
+*   c. Latin; 200
+*   d. Vietnamese; 300
+*   e. Latin-Ext; 300
+*   f. Latin; 300
+*/
+<!-- end typography table of contents -->
+ 
 <!-- start font import -->
 /* vietnamese */
 @font-face {
