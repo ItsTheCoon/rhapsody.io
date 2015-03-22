@@ -43,3 +43,123 @@
 */
 <!-- end button table of contents -->
 
+<!-- start styling -->
+/* start styling */
+.btn {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+/* end styling */
+
+/* start prime (blue) */
+.prime {
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.prime:hover {
+  background-color: #6FC6FF;
+}
+/* end prime (blue) */
+
+/* start luminous (white) */
+.luminous {
+  background-color: #f3f3f3;
+  box-shadow: 0px 5px 0px 0px #999999;
+  color: #333333;
+}
+
+.luminous:hover {
+  background-color: #d3d3d3;
+}
+/* end luminous (white) */
+
+/* start dark (black) */
+.dark {
+  background-color: #333333;
+  box-shadow: 0px 5px 0px 0px #222222;
+}
+
+.dark:hover {
+  background-color: #000000;
+}
+/* end dark (black) */
+
+/* start vital (red) */
+.vital {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.vital:hover {
+  background-color: #FF6656;
+}
+/* end vital (red) */
+
+/* start sun (orange) */
+.sun {
+  background-color: #e67e22;
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.sun:hover {
+  background-color: #FF983C;
+}
+/* end sun (orange)*/
+
+/* start neon (yellow) */
+.neon {
+  background-color: #f1c40f;
+  box-shadow: 0px 5px 0px 0px #D8AB00;
+}
+
+.neon:hover {
+  background-color: #FFDE29;
+}
+/* end neon (yellow) */
+
+/* start royal (purple) */
+.royal {
+  background-color: #9b59b6;
+  box-shadow: 0px 5px 0px 0px #82409D;
+}
+
+.royal:hover {
+  background-color: #B573D0;
+}
+/* end royal (purple) */
+
+/* start rich (green) */
+.rich {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.rich:hover {
+  background-color: #48E68B;
+}
+/* end rich (green) */
+
+/* start unique (custom) */
+.unique {
+  background-color: #00affe;
+  box-shadow: 0px 5px 0px 0px #5555ff;
+}
+
+.unique:hover {
+  background-color: #4bfcfc;
+}
+/* end unique (custom) */
+<!-- end styling -->
