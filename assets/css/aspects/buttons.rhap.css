@@ -11,155 +11,288 @@
  * Enjoy!
  * Love,
  * Joel.
+ *
+ * NOTE: (August 17, 2015) This was made to be played around with. Don't be afraid to change things! Everyone is different, embrace that.
+ *
  */
  
 <!-- start button table of contents -->
 /*
 * 1. Styling
-*   a. Global Button Styling
-*   b. Prime (Blue)
-*   c. Luminous (White)
-*   d. Dark (Black)
-*   e. Vital (Red)
-*   f. Sun (Orange)
-*   g. Neon (Yellow)
-*   h. Royal (Purple)
-*   i. Rich (Green)
-*   j. Unique (You can customize this colour!)
+*   a. Global Button Styling (Default is dark grey.)
+*   b. Primary (Blue)
+*   c. Success (Green)
+*   d. Warning (Yellow)
+*   e. Danger (Red)
+*   f. Info (Cyan)
+*   g. Custom (You can change this colour!)
 *
 * 2. Fonts
-*   a. Global Button Font Styling
-*   b. Bold Buttons
-*   c. Italic Buttons
+*   a. Font Import
+*   b. Global Button Font Styling
+*   c. Bold Buttons
+*   d. Italic Buttons
 *
-* 3. Levels
-*   a. Small
-*   b. Medium
-*   c. Large
-*   d. Extra Large
-*   e. Block
-*   f. Squared
-*   g. Circled
+* 3. Variations
+*   a. Double Border
 */
 <!-- end button table of contents -->
 
 <!-- start styling -->
-/* start styling */
+/* start global styling (dark grey is default) */
 .btn {
-  border-radius: 5px;
-  padding: 15px 25px;
-  font-size: 22px;
-  text-decoration: none;
-  margin: 20px;
-  color: #fff;
+  margin: 10px;
   position: relative;
-  display: inline-block;
+  padding: 10px 20px;
+  color: 444;
+  font-size: 14px;
+  background: #FFF;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #444;
+  -webkit-appearance: none;
+  -webkit-transition: all .5s ease;
 }
 
-.btn:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
-}
-/* end styling */
-
-/* start prime (blue) */
-.prime {
-  background-color: #55acee;
-  box-shadow: 0px 5px 0px 0px #3C93D5;
+.btn:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
 }
 
-.prime:hover {
-  background-color: #6FC6FF;
+.btn:hover {
+  color: #FFF;
+  background: #444;
 }
-/* end prime (blue) */
+/* end global styling (dark grey is default) */
 
-/* start luminous (white) */
-.luminous {
-  background-color: #f3f3f3;
-  box-shadow: 0px 5px 0px 0px #999999;
-  color: #333333;
-}
-
-.luminous:hover {
-  background-color: #d3d3d3;
-}
-/* end luminous (white) */
-
-/* start dark (black) */
-.dark {
-  background-color: #333333;
-  box-shadow: 0px 5px 0px 0px #222222;
+/* start primary (blue) */
+.btn-primary {
+  color: #2A8FBD;
+  border-color: #2A8FBD;
 }
 
-.dark:hover {
-  background-color: #000000;
+.btn-primary:hover {
+  background: #2A8FBD;
 }
-/* end dark (black) */
+/* end primary (blue) */
 
-/* start vital (red) */
-.vital {
-  background-color: #e74c3c;
-  box-shadow: 0px 5px 0px 0px #CE3323;
-}
-
-.vital:hover {
-  background-color: #FF6656;
-}
-/* end vital (red) */
-
-/* start sun (orange) */
-.sun {
-  background-color: #e67e22;
-  box-shadow: 0px 5px 0px 0px #CD6509;
+/* start success (green) */
+.btn-success {
+  color: #7FAF1B;
+  border-color: #7FAF1B;
 }
 
-.sun:hover {
-  background-color: #FF983C;
+.btn-success:hover {
+  background: #7FAF1B;
 }
-/* end sun (orange)*/
+/* end success (green) */
 
-/* start neon (yellow) */
-.neon {
-  background-color: #f1c40f;
-  box-shadow: 0px 5px 0px 0px #D8AB00;
-}
-
-.neon:hover {
-  background-color: #FFDE29;
-}
-/* end neon (yellow) */
-
-/* start royal (purple) */
-.royal {
-  background-color: #9b59b6;
-  box-shadow: 0px 5px 0px 0px #82409D;
+/* start warning (yellow) */
+.btn-warning {
+  color: #FBB829;
+  border-color: #FBB829;
 }
 
-.royal:hover {
-  background-color: #B573D0;
+.btn-warning:hover {
+  background: #FBB829;
 }
-/* end royal (purple) */
+/* end warning (yellow) */
 
-/* start rich (green) */
-.rich {
-  background-color: #2ecc71;
-  box-shadow: 0px 5px 0px 0px #15B358;
-}
-
-.rich:hover {
-  background-color: #48E68B;
-}
-/* end rich (green) */
-
-/* start unique (custom) */
-.unique {
-  background-color: #00affe;
-  box-shadow: 0px 5px 0px 0px #5555ff;
+/* start danger (red) */
+.btn-danger {
+  color: #F02311;
+  border-color: #F02311;
 }
 
-.unique:hover {
-  background-color: #4bfcfc;
+.btn-danger:hover {
+  background: #F02311;
 }
-/* end unique (custom) */
+/* end danger (red) */
+
+/* start info (Cyan) */
+.btn-info {
+  color: #6CDFEA;
+  border-color: #6CDFEA;
+}
+.btn-info:hover {
+  background: #6CDFEA;
+}
+/* end info (Cyan) */
+
+/* start custom (any colour!) */
+.btn-custom {
+  color: #FFA200; /* just change this hex colour value here */
+  border-color: #FFA200; /* and this one to match the one above */
+}
+
+.btn-custom:hover {
+  background: #FFA200; /* and finally this one. viola.*/
+}
+/* end custom (any colour!) */
 <!-- end styling -->
+
+<!-- start fonts -->
+/* start font import */
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGBtvTbjs3T7OK9b50AXe70D3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGDvlGRZ3uCFbvUJSJFyaVCX3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGIAPdqzPmKFFIYQ-46z3JxY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCD5K6T8I4oZ1X3Xvlj_UeP3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGDOFnJNygIkrHciC8BWzbCz3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCP2LEk6lMzYsRqr3dHFImA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlCxe5Tewm2_XWfbGchcXw4g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlIa1YDtoarzwSXxTHggEXMw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMZXFz2iDKd7GJNSaxRYiSj3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGKyGJhAh-RE0BxGcd_izyev3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMzFoXZ-Kj537nB_-9jJhlA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMms7UHsIbjUxEJqIwog-i_3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGO4s1Ux4PuImWPk5fSr6HPL3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* end font import */
+
+/* start global font */
+.btn {
+  font-family: Source Sans Pro;
+}
+/* end global font */
+
+/* start bold font */
+.btn-bold {
+  font-weight: 700;
+}
+/* end bold font */
+
+/* start italic font */
+.btn-itlc {
+  font-style: italic;
+}
+/* end italic font */
+<!-- end fonts -->
+
+<!-- start variations -->
+/* start double border */
+.btn-border:after {
+  border-radius: 5px;
+  border: 1px solid black;
+  border-color: inherit;
+}
+/* end double border */
+
+
+
+/*
+* That's it!
+* No really, that's it.
+* Celebrate!
+*/
