@@ -16,7 +16,8 @@
  *
  */
  
-<!-- start button table of contents -->
+/* START BUTTON TABLE OF CONTENTS
+* --- --- --- */
 /*
 * 1. Styling
 *   a. Global Button Styling (Default is dark grey.)
@@ -36,9 +37,11 @@
 * 3. Variations
 *   a. Double Border
 */
-<!-- end button table of contents -->
+/* END BUTTON TABLE OF CONTENTS
+* --- --- --- */
 
-<!-- start styling -->
+/* START STYLING
+* --- --- --- */
 /* start global styling (dark grey is default) */
 .btn {
   margin: 10px;
@@ -135,9 +138,11 @@
   background: #FFA200; /* and finally this one. viola.*/
 }
 /* end custom (any colour!) */
-<!-- end styling -->
+/* END STYLING
+* --- --- --- */
 
-<!-- start fonts -->
+/* START FONTS 
+* --- --- --- */
 /* start font import */
 /* vietnamese */
 @font-face {
@@ -278,9 +283,11 @@
   font-style: italic;
 }
 /* end italic font */
-<!-- end fonts -->
+/* END FONTS
+* --- --- --- */
 
-<!-- start variations -->
+/* START VARIATIONS
+* --- --- --- */
 /* start double border */
 .btn-border:after {
   border-radius: 5px;
@@ -288,7 +295,8 @@
   border-color: inherit;
 }
 /* end double border */
-
+/* END VARIATIONS
+* --- --- --- */
 
 
 /*
