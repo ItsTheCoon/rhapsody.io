@@ -15,7 +15,8 @@
  * Joel.
  */
  
- <!-- start typography table of contents -->
+/* START TYPOGRAPHY TABLE OF CONTENTS
+* --- --- --- */
 /*
 * 1. Font Import (Google Fonts)
 *   a. Vietnamese; 200
@@ -25,9 +26,11 @@
 *   e. Latin-Ext; 300
 *   f. Latin; 300
 */
-<!-- end typography table of contents -->
- 
-<!-- start font import -->
+/* END TYPOGRAPHY TABLE OF CONTENTS
+* --- --- --- */
+
+/* START FONT IMPORT
+* --- --- --- */
 /* vietnamese */
 @font-face {
   font-family: 'Source Sans Pro';
