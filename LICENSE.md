@@ -1,6 +1,6 @@
 <h1>The MIT License (MIT)</h1>
 
-<h3>Copyright (c) 2015 Miles Jefferson</h3>
+<h3>Copyright (c) 2015 Miles Jefferson and Schön Developments</h3>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
